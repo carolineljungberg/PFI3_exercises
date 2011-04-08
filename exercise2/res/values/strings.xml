@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Message!</string>
+    <string name="app_name">EssEmmEssApp</string>
+    <string name="message_field">Message</string>
+    <string name="tag_field">Tag</string>
+    
+</resources>
