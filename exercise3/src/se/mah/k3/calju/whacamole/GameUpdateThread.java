@@ -17,9 +17,9 @@ public class GameUpdateThread extends Thread{
 		while(running){
 			try{
 				Log.i("k3", "Thread Running");
-				_handler.obtainMessage(1).setTarget(_handler);
+				_handler.obtainMessage(1).sendToTarget();
 				
-				Thread.sleep(2);
+				Thread.sleep(150);
 	} catch (InterruptedException e){
 		//Log.i(StaticFields.TAG, e.getMessage());
 }

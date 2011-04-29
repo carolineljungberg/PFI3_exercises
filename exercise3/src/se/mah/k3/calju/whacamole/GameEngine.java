@@ -52,6 +52,9 @@ private void createMoles() {
 protected void onDraw(Canvas canvas){
 	super.onDraw(canvas);
 	canvas.drawPaint(background);
+	Paint _p2;
+	_p2= new Paint();
+	_p2.setARGB(255, 140, 25, 140);
 	for(int i = 0; i<3;i++){
 		for(int j = 0;j<3;j++) {
 		canvas.drawCircle(80+(i*70),80+(j*70), 30, holes);
@@ -59,7 +62,7 @@ protected void onDraw(Canvas canvas){
 		}
 
 		}
-
+canvas.drawText("Score: " +score, 50, 350, _p2);
 	for (Drawable d: myMoles){
 		d.draw(canvas);
 		
@@ -70,10 +73,11 @@ protected void onDraw(Canvas canvas){
 	@Override
 	public boolean onTouchEvent(MotionEvent event){
 		Log.i("touch: ", +event.getX()+","+event.getY());
-		for (Drawable d : myMoles){
-			d.pressed(event);
+		for (Drawable d : myMoles) {
+			if (d.pressed(event))
 			score++;
-		}
+			}
+		
 		update();
 		return super.onTouchEvent(event);
 	}
