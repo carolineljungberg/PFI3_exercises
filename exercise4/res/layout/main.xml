@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+     android:id="@+id/linearLayout1" 
+    android:background="#FFF" 
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+        <TextView android:text="Whats on your mind?" 
+        android:id="@+id/textView1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#F78205"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginBottom="20px" android:layout_marginTop="5px" android:typeface="sans">  
+        </TextView>
+        
+        <TextView
+        android:text="Username" 
+        android:id="@+id/textView2" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#F78205"
+   	    android:typeface="sans"
+   	    android:textSize="14sp" android:layout_marginBottom="5px" android:layout_marginLeft="5px">
+        </TextView>
+        
+        <EditText android:id="@+id/username"
+         android:layout_width="match_parent" 
+         android:text=""
+         android:typeface="sans" android:textColor="#000"
+          android:maxLength="32" android:maxLines="1" 
+          android:layout_height="wrap_content"
+           android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:layout_marginBottom ="10px">
+         
+         </EditText>
+        <TextView android:text="Password" 
+        android:id="@+id/textView3" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#F78205"
+    	android:typeface="sans"
+    
+    	android:textSize="14sp" android:layout_marginBottom="5px" android:layout_marginLeft="5px">
+        </TextView>
+        
+        <EditText android:id="@+id/password"
+         android:layout_width="match_parent" android:text=""
+         android:textColor="#000"
+ 	     android:typeface="sans" android:layout_height="wrap_content"
+ 	     android:layout_marginLeft="5px"
+ 	     android:layout_marginRight="5px"
+ 	     android:maxLength="256" 
+ 	     android:gravity="top"
+ 	     android:inputType="text|textMultiLine|textPassword">
+         </EditText>
+         
+        <Button android:text="Log in" 
+        android:id="@+id/login" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#F78205"
+ 	    android:typeface="sans"
+ 	    android:textSize="20sp" android:layout_gravity="center_horizontal" 
+ 	    android:layout_marginTop="50px">
+        </Button>
+</LinearLayout>
+ 

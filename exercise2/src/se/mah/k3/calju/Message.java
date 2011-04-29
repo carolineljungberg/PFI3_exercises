@@ -22,8 +22,8 @@ public class Message extends Activity implements OnClickListener {
     }
 	public void onClick(View v) {
 		
-		EditText rubrik = (EditText) findViewById(R.id.editText1);
-		EditText text = (EditText) findViewById(R.id.editText2);
+		EditText rubrik = (EditText) findViewById(R.id.tagfield);
+		EditText text = (EditText) findViewById(R.id.messagefield);
 		String s1 = rubrik.getText().toString();
 		String s2 = text.getText().toString();
 		String s3 = s1 + "\n" + s2;

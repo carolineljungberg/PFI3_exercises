@@ -1,0 +1,70 @@
+
+    <LinearLayout android:orientation="vertical"
+     android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+     android:id="@+id/linearLayout1" 
+    android:background="#FFF" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:text="Whats on your mind?" 
+        android:id="@+id/textView1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#F78205"
+        android:typeface="sans" android:layout_gravity="center_horizontal"
+        android:textSize="26sp"
+        android:layout_marginBottom="5px" android:layout_marginTop="5px">  
+        </TextView>
+        
+        <TextView
+        android:text="Tag" 
+        android:id="@+id/textView2" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#F78205"
+   	    android:typeface="sans"
+   	    android:textSize="16sp" android:layout_marginBottom="5px" android:layout_marginLeft="5px">
+        </TextView>
+        
+        <EditText android:id="@+id/tagfield"
+         android:layout_width="match_parent" 
+         android:text=""
+         android:typeface="sans" android:textColor="#000"
+          android:maxLength="32" android:maxLines="1" 
+          android:layout_height="wrap_content"
+           android:layout_marginLeft="5px"
+            android:layout_marginRight="5px">
+         
+         </EditText>
+        <TextView android:text="Message" 
+        android:id="@+id/textView3" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#F78205"
+    	android:typeface="sans"
+    	android:textSize="16sp" android:layout_marginBottom="5px" android:layout_marginLeft="5px">
+        </TextView>
+        
+        <EditText android:id="@+id/messagefield"
+         android:layout_width="match_parent" android:text=""
+         android:textColor="#000"
+          android:textColorHint="#55C799"
+         android:hint="a penny for your thoughts..."
+ 	     android:typeface="sans" android:layout_height="80dip"
+ 	     android:layout_marginLeft="5px"
+ 	     android:layout_marginRight="5px"
+ 	     android:maxLength="256" 
+ 	     android:gravity="top">
+         </EditText>
+         
+        <Button android:text="Submit" 
+        android:id="@+id/submit" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#F78205"
+ 	    android:typeface="sans"
+ 	    android:textSize="16sp" android:layout_gravity="center_horizontal" 
+ 	    android:layout_marginTop="10px">
+        </Button>
+ 
+    </LinearLayout>
+ 

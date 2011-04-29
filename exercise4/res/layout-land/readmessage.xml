@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+     android:id="@+id/linearLayout1" 
+   android:background="#FFF" 
+     android:textColor="#000"
+ 	      android:typeface="sans"
+ 	      android:textSize="20sp"
+          
+  
+    
+    xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+        <TextView android:text="Whats on your mind?" 
+        android:id="@+id/textView1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#F78205"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginBottom="5px" android:layout_marginTop="5px" android:typeface="sans">  
+        </TextView>
+        
+      
+          <ListView android:id="@+id/listView1" 
+          android:layout_height="200px" 
+          android:layout_width="match_parent"
+           >
+          
+          </ListView>
+        
+
+    
+         
+        <Button android:text="Update" 
+        android:id="@+id/button1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#F78205"
+ 	    android:typeface="sans"
+ 	    android:textSize="20sp" android:layout_gravity="center_horizontal" 
+ 	    android:layout_marginTop="10px">
+        </Button>
+</LinearLayout>
